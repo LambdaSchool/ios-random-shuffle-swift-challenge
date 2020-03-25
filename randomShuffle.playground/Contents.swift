@@ -3,8 +3,9 @@ import UIKit
 
 func randomShuffle(array: [Int]) -> [Int]? {
     var array = array
-    let randomNumber = Int(arc4random_uniform(UInt32(array.count)))
-    let secondRandomNumber = Int(arc4random_uniform(UInt32(array.count)))
+    let count = array.count
+    let randomNumber = Int(arc4random_uniform(UInt32(count)))
+    let secondRandomNumber = Int(arc4random_uniform(UInt32(count)))
     array.swapAt(randomNumber, secondRandomNumber)
     return array
 
