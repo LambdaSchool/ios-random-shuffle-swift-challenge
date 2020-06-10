@@ -1,5 +1,9 @@
 import UIKit
 
+/*
+ Using Fisher-Yates randomization algorithm
+ */
+
 func randomShuffle(array: inout [Int]) {
     var count = array.count
     
